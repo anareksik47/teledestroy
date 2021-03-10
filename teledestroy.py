@@ -27,8 +27,8 @@ if choice == "Y" or choice == "y":
 		except:
 			print("Телеграм включил кд на запросы, включаем ожидание на 10 секунд...")
 			time.sleep(10)
+			tb.send_message(userid, msgt)
 	print(f"Отправлено {str(times)} сообщений!")
-
 choice = str(input("Подключить скрипт на отправку сообщения после написания /start? (Y/N): "))
 if choice == "N" or choice == "n":
 	exit()
