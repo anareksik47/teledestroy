@@ -12,10 +12,9 @@ try:
 except:
 	print("Токен недействительный!")
 	exit()
-print(f"Имя: {me.first_name}")
 print(f"Ник: @{me.username}")
 print(f"ID бота: {me.id}")
-choice = str(input("Запустить спам с бота? (Y/N): "))
+choice = str(input(f"Запустить спам от имени {me.first_name}")? (Y/N): "))
 if choice == "Y" or choice == "y":
 	userid = int(input("Введите user id человека, на которого будет идти спам: "))
 	msgt = str(input("Введите сообщение для спама: "))
